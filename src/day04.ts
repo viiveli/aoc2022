@@ -14,12 +14,14 @@ const solver = (input: string) => {
         let section2 = pair.split(',')[1].split('-').map(i => Number(i));
 
         // generate sets filled with range
-        let section1Area = new Set([
-            ...Array(section1[1] - section1[0] + 1).keys()
-        ].map(i => i + section1[0]));
-        let section2Area = new Set([
-            ...Array(section2[1] - section2[0] + 1).keys()
-        ].map(i => i + section2[0]));
+        let section1Area = new Set(
+            [...Array(section1[1] - section1[0] + 1).keys()]
+            .map(i => i + section1[0])
+        );
+        let section2Area = new Set(
+            [...Array(section2[1] - section2[0] + 1).keys()]
+            .map(i => i + section2[0])
+        );
 
         // find the intersection
         let intersect = new Set(
