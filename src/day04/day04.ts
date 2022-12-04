@@ -26,15 +26,15 @@ const solver = (input: string) => {
             [...section1Area].filter(i => section2Area.has(i))
         );
 
-        // see if intersection overlaps either area
-        if ([section1Area.size, section2Area.size].includes(intersect.size)) {
-            score += 1
-        }
+        // see if intersection completely overlaps with either area
+        [section1Area.size, section2Area.size].includes(intersect.size)
+            ? score += 1
+            : null
         
         // see if there is an intersection at all
-        if (intersect.size > 0) {
-            scoreTwo += 1
-        }
+        intersect.size > 0
+            ? scoreTwo += 1
+            : null
     });
 
     console.log(score);
