@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
 
-let TEST_INPUT = readFileSync('./inputs/day02/test_input', 'utf8')
-let INPUT = readFileSync('./inputs/day02/input', 'utf8')
+let TEST_INPUT = readFileSync('./inputs/day02.in', 'utf8')
+let INPUT = readFileSync('./inputs/day02.test', 'utf8')
 
 const solver = (input: string, part: string = 'one') => {
     let matchPairs = input.trim().split('\n');

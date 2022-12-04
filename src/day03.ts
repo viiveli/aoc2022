@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
 
-let TEST_INPUT = readFileSync('./inputs/day03/test_input', 'utf8')
-let INPUT = readFileSync('./inputs/day03/input', 'utf8')
+let TEST_INPUT = readFileSync('./inputs/day03.test', 'utf8')
+let INPUT = readFileSync('./inputs/day03.in', 'utf8')
 
 let priorities = '_abcdefghijklmnopqrstuvwxyz';
 

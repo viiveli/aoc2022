@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
 
-let TEST_INPUT = readFileSync('./inputs/day04/test_input', 'utf8')
-let INPUT = readFileSync('./inputs/day04/input', 'utf8')
+let TEST_INPUT = readFileSync('./inputs/day04.test', 'utf8')
+let INPUT = readFileSync('./inputs/day04.in', 'utf8')
 
 const solver = (input: string) => {
     let arr = input.trim().split('\n')
