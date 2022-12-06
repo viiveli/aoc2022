@@ -5,7 +5,7 @@ First time participating and simultaneously trying to wrap my head around TypeSc
 
 > ### day 06
 > **puzzles:** https://adventofcode.com/2022/day/6  
->> *Find a substring with x amount of unique characters from an input string*  
+>> *Find the first occurrence of a substring with x amount of unique characters from an input string*  
 >
 > **solution:** [./src/day06.ts](<./src/day06.ts> "day 06")  
 
