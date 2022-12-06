@@ -2,12 +2,12 @@ import { readFileSync } from 'fs';
 
 let INPUT = readFileSync('./inputs/day06.in', 'utf8')
 
-const solver = (dataStream: string, length: number) => {
+const solver = (dataStream: string, markerLength: number) => {
     for (let index = 0; index < dataStream.length; index++) {
-        const marker = new Set(dataStream.slice(index, index+length));
+        const marker = new Set(dataStream.slice(index, index+markerLength));
         
-        if (marker.size === length) {
-            return index+length
+        if (marker.size === markerLength) {
+            return index+markerLength
         }
     }
 
