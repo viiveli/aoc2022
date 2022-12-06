@@ -5,7 +5,7 @@ let INPUT = readFileSync('./inputs/day03.in', 'utf8')
 
 let priorities = '_abcdefghijklmnopqrstuvwxyz';
 
-const roundOne = (input: string) => {
+const partOne = (input: string) => {
     let score = 0;
     let arr = input.trim().split('\n')
 
@@ -26,7 +26,7 @@ const roundOne = (input: string) => {
     console.log(score);
 }
 
-const roundTwo = (input: string) => {
+const partTwo = (input: string) => {
     let score = 0;
     let arr = input.trim().split('\n')
 
@@ -52,5 +52,5 @@ const roundTwo = (input: string) => {
     console.log(score)
 }
 
-roundOne(INPUT)
-roundTwo(INPUT)
+partOne(INPUT)
+partTwo(INPUT)

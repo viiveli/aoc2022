@@ -47,7 +47,7 @@ const generateSequence = (rawInstructions: string[]) => {
     return sequence
 }
 
-const roundOne = () => {
+const partOne = () => {
     let stacks = generateStacks(rawStacks)
     let sequence = generateSequence(rawInstructions)
     
@@ -67,7 +67,7 @@ const roundOne = () => {
     console.log(stacks.map(i => i[0]).join(''));
 }
 
-const roundTwo = () => {
+const partTwo = () => {
     let stacks = generateStacks(rawStacks)
     let sequence = generateSequence(rawInstructions)
     
@@ -85,5 +85,5 @@ const roundTwo = () => {
     console.log(stacks.map(i => i[0]).join(''));
 }
 
-roundOne()
-roundTwo()
+partOne()
+partTwo()
