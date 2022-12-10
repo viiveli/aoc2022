@@ -34,9 +34,11 @@ const solver = (input: string) => {
             sum += idx * X;
         }
 
-        [X - 1, X, X + 1].includes(pixelIndex)
-            ? pixelRow.push('#')
-            : pixelRow.push('.')
+        if ([X - 1, X, X + 1].includes(pixelIndex)) {
+            pixelRow.push('#')
+        } else {
+            pixelRow.push('.')
+        }
         
         pixelIndex += 1;
         
