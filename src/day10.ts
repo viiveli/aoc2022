@@ -48,14 +48,9 @@ const solver = (input: string) => {
             pixelIndex = 0;
         }
         
-        switch (cycle.split(' ')[0]) {
-            case 'addx':
-                X += Number(cycle.split(' ')[1])
-                break;
-            default:
-                break;
+        if (cycle.split(' ')[0] === 'addx') {
+            X += Number(cycle.split(' ')[1])
         }
-
     });
 
     console.log('Part one:', sum)
