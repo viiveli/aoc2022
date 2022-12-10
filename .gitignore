@@ -130,3 +130,7 @@ dist
 .pnp.*
 
 build/
+
+# solutions mocked from someone else
+src/day07.ts
+inputs/day07*
