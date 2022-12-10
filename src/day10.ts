@@ -4,14 +4,14 @@ let TEST_INPUT = readFileSync('./inputs/day10.test', 'utf8')
 let INPUT = readFileSync('./inputs/day10.in', 'utf8')
 
 let X = 1;
-let idx = 0;
+let cycleIndex = 0;
 let sum: number = 0;
 let crtScreen: Array<string[]> = [];
 
 const solver = (input: string) => {
     let signal = input.trim().split('\n').filter(i => i.length > 0)
     let cycles: string[] = [];
-    let pixelIndex = 0;
+    let pixelPosition = 0;
     let pixelRow: string[] = [];
 
     signal.forEach(line => {
@@ -28,24 +28,24 @@ const solver = (input: string) => {
     });
     
     cycles.forEach(cycle => {
-        idx += 1;
+        cycleIndex++;
         
-        if ([20, 60, 100, 140, 180, 220].includes(idx)) {
-            sum += idx * X;
+        if ([20, 60, 100, 140, 180, 220].includes(cycleIndex)) {
+            sum += cycleIndex * X;
         }
 
-        if ([X - 1, X, X + 1].includes(pixelIndex)) {
+        if ([X - 1, X, X + 1].includes(pixelPosition)) {
             pixelRow.push('#')
         } else {
             pixelRow.push('.')
         }
         
-        pixelIndex += 1;
+        pixelPosition++;
         
-        if (pixelRow.length == 40) {
+        if (pixelRow.length === 40) {
             crtScreen.push(pixelRow);
             pixelRow = [];
-            pixelIndex = 0;
+            pixelPosition = 0;
         }
         
         if (cycle.split(' ')[0] === 'addx') {
