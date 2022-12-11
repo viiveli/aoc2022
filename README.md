@@ -33,7 +33,7 @@ First time participating this mayhem of puzzles and simultaneously using it as a
 > - **[./src/day05.ts](<./src/day05.ts> "day 05 solution")**  
 
 > ### day 04
-> ttps://adventofcode.com/2022/day/4  
+> https://adventofcode.com/2022/day/4  
 > - **[./src/day04.ts](<./src/day04.ts> "day 04 solution")**  
 
 > ### day 03
