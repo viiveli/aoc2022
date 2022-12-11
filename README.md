@@ -3,6 +3,10 @@
 
 First time participating this mayhem of puzzles and simultaneously using it as a good excuse to teach myself a thing or two about TypeScript.
 
+> ### day 11
+> https://adventofcode.com/2022/day/11  
+> - **[./src/day11.ts](<./src/day11.ts> "day 11 solution")**  
+
 > ### day 10
 > https://adventofcode.com/2022/day/10  
 > - **[./src/day10.ts](<./src/day10.ts> "day 10 solution")**  
