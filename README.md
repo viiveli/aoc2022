@@ -17,7 +17,8 @@ First time participating this mayhem of puzzles and simultaneously using it as a
 
 > ### day 08
 > https://adventofcode.com/2022/day/8  
-> - **TBD**  
+> - Part two still missing
+> - **[./src/day08.ts](<./src/day08.ts> "day 08 solution")** 
 
 > ### day 07
 > https://adventofcode.com/2022/day/7  
