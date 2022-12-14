@@ -5,7 +5,6 @@ First time participating this mayhem of puzzles and simultaneously using it as a
 
 > ### day 13
 > https://adventofcode.com/2022/day/13  
-> - Part two TBD
 > - **[./src/day13.ts](<./src/day13.ts> "day 13 solution")**  
 
 > ### day 12

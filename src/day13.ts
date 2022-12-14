@@ -52,6 +52,14 @@ const solver = (input: string) => {
     });
 
     console.log('Part one:', sum);  
+
+    let dividers = ['[[2]]', '[[6]]'];
+    let all = [...signal.flat(), ...dividers];
+    all.sort((a, b) => compare(JSON.parse(b), JSON.parse(a)))
+    
+    console.log(
+        'Part two:', (all.indexOf(dividers[0])+1) * (all.indexOf(dividers[1])+1)
+    )
 }
 
 
