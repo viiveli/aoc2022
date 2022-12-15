@@ -3,6 +3,9 @@
 
 First time participating this mayhem of puzzles and simultaneously using it as a good excuse to teach myself a thing or two about TypeScript.
 
+**...yeah so pretty much what I expected. After day 10 or so it started to become quite clear that my skillset isn't yet on par with those more complicated puzzles. Takes just waaay too much time to solve these. Good effort though.**
+
+
 > ### day 13
 > https://adventofcode.com/2022/day/13  
 > - **[./src/day13.ts](<./src/day13.ts> "day 13 solution")**  
